@@ -15,14 +15,32 @@
         <div class="canvas__container">
             <canvas id="myCanvas" width="800" height="600"></canvas>
             <img src="" id="mirror" class="canvas__mirror" />
-            <label for="density">Density</label><input id="density" type="range" min="1" max="500" value="50">
-            <label for="width">Width</label><input id="width" type="range" min="1" max="4" value="1">
+            <a href="#" target="_blank" class="button" id="btn-download">Download</a>
 
-            <input id="factorX" type="range" min="1" max="500" value="50">
-            <input id="factorY" type="range" min="1" max="500" value="50">
-            <input id="radius" type="range" min="1" max="150" value="50">
+            
         </div>
-        <a href="#" class="button" id="btn-download">Download</a>
+        <div class="container">
+            <div class="slider">
+                <label for="density">Density</label><input id="density" type="range" min="1" max="500" value="50">
+            </div>
+
+            <div class="slider">
+                <label for="width">Width</label><input id="width" type="range" min="1" max="4" value="1">
+            </div>
+            
+            <div class="slider">
+                <label for="factorX">FactorX</label><input id="factorX" type="range" min="1" max="500" value="50">
+            </div>
+            
+            <div class="slider">
+                <label for="factorY">FactorY</label><input id="factorY" type="range" min="1" max="500" value="50">
+            </div>
+
+            <div class="slider">
+                <label for="radius">Radius</label><input id="radius" type="range" min="1" max="150" value="50">
+            </div>
+        </div>
+
         <script src="script/setup.js"></script>
         <script src="script/utils.js"></script>
         <script src="script/template2.js"></script>

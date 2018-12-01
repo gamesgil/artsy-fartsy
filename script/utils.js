@@ -18,6 +18,13 @@ const drawCircle = ({x, y, radius, width = 1, color = 'black'}) => {
     ctx.stroke()
 }
 
+const drawDot = ({x, y, color = 'black'}) => {
+    ctx.fillStyle = color
+    ctx.strokeStyle = color
+    ctx.beginPath()
+    ctx.fillRect(x, y, 1, 1)
+}
+
 const getRandomColor = _ => {
     const r = getRandom(0, 255)
     const g = getRandom(0, 255)
@@ -32,7 +39,8 @@ const getRandomGrayscale = _ => {
     return `rgb(${c}, ${c}, ${c})`
 }
 
-const clear = _ => {
+const clear = (color = 'black') => {
+    ctx.fillStyle = color
     ctx.fillRect(0, 0, canvas.width, canvas.height)
     // ctx.clearRect(0, 0, canvas.width, canvas.height)
 }

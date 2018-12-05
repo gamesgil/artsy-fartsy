@@ -10,6 +10,12 @@ const drawLine = ({from, to, color = 'black'}) => {
     ctx.stroke()
 }
 
+const drawRect = ({x, y, width, height, color = 'black'}) => {
+    ctx.strokeStyle = color
+    ctx.rect(x, y, width, height)
+    ctx.stroke()
+}
+
 const drawCircle = ({x, y, radius, width = 1, color = 'black'}) => {
     ctx.strokeStyle = color
     ctx.lineWidth = width

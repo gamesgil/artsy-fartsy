@@ -51,3 +51,13 @@ label {
     top: 0;
     /* width: 100%;  */
   }
+
+  td {
+    width: 2px;
+    height: 2px;
+  }
+
+  table {
+    border-collapse: collapse;
+
+  }
